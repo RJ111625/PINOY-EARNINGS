@@ -1,9 +1,9 @@
 /*CMD
-  command: ⏭️2/3
+  command: Tttttt
   help: 
   need_reply: 
   auto_retry_time: 
-  folder: MINING
+  folder: 
   answer: 
   keyboard: 
   aliases: 
