@@ -4,10 +4,7 @@
   need_reply: false
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
@@ -18,10 +15,11 @@ if (stat=="ban"){
 Bot.sendMessage("*You're Ban From Using The Bot ❌*");
 }else{
 
-let channel = "@pinoy_earning_group";
+let channel = "@pinoy_activity_channel";
 let id = user.telegramid
 Api.getChatMember({ 
 chat_id : channel,
 user_id : id,
 on_result :"check"})
 }
+
