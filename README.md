@@ -1,5 +1,5 @@
-# pinoy_earning_bot - chat bot
-It is repository for chat bot: [@pinoy_earning_bot](https://t.me/pinoy_earning_bot)
+# Delete2002_bot - chat bot
+It is repository for chat bot: [@Delete2002_bot](https://t.me/Delete2002_bot)
 
 ## What it is?
 This repository can be imported to [Bots.Business](https://bots.business) as a worked chat bot.

@@ -1,13 +1,10 @@
 /*CMD
-  command: check
+  command: check2
   help: 
   need_reply: 
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
@@ -15,10 +12,12 @@ CMD*/
 var user = options.result.status;
 User.setProperty("status" , user, "string");
 if (user=="member" | user =="administrator" | user=="creator"){
-Bot.runCommand("start2")
+Bot.runCommand("main_menu")
 User.addToGroup("user")
 }
 
 if (user=="left"){
 Bot.sendMessage("*❌ Must join all channels*")
+Bot.runCommand("start2")
 }
+
