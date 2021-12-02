@@ -1,5 +1,5 @@
 /*CMD
-  command: 🎁 BONUS HOUR
+  command: bunos
   help: 
   need_reply: 
   auto_retry_time: 
@@ -15,7 +15,7 @@ if(!last_run_at){ return true }
 
 var minutes = (Date.now() - last_run_at) /1000/60;
 
-var minutes_in_day = 1 * 2
+var minutes_in_day = 60 * 24
 var next = minutes_in_day - minutes
 var wait_hours = Math.floor(next / 60)
 next -= wait_hours * 60
@@ -32,9 +32,9 @@ return true;
 if(!canRun()){ return }
 User.setProperty("last_run_at", Date.now(), "integer");
 
-let balance = Libs.ResourcesLib.userRes("balance")
-balance.add(100)
-Bot.sendMessage(
-"*🎁 Congrats , you Received 100PHP*"
-)
 
+
+var daily = Libs.Random.randomFloat(0.01, 0.99); 
+User.setProperty("daily", daily, "value", "toFixed")
+
+Bot.runCommand("TRY")

@@ -4,7 +4,10 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-  answer: ANG IYONG MENU🗄️
+
+  <<ANSWER
+
+  ANSWER
   keyboard: 
   aliases: 
 CMD*/
@@ -18,7 +21,7 @@ var msgid = User.getProperty("msgid")
 Api.deleteMessage({
 message_id : msgid
 })
-Bot.sendKeyboard("💰 BALANCE\n👨‍👨‍👦‍👦 Mag-Refer,🎁 BONUS HOUR,🏧 WITHDRAW,\n⚙️SET WALLET,📞I-Contact Kami,\n ⏭️NEXT MENU", "*▶️ Refer and Earn Cash*")
+Bot.sendKeyboard("💰 BALANCE\n👨‍👨‍👦‍👦 Mag-Refer,🎁 BONUSES,🏧 WITHDRAW,\n⚙️SET WALLET,📞I-Contact Kami,\n ⏭️NEXT MENU", "*▶️ ANG IYONG MENU🗄️*")
 }
 if (user=="left"){
 Bot.runCommand("/start");
