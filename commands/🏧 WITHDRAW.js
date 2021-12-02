@@ -5,10 +5,7 @@
   auto_retry_time: 
   folder: 
   answer: 
-
-  <<KEYBOARD
-
-  KEYBOARD
+  keyboard: 
   aliases: 
 CMD*/
 
@@ -19,7 +16,7 @@ Bot.sendMessage("*You're Ban*")
 }else{
 let balance = Libs.ResourcesLib.userRes("balance")
 let withdrawn = Libs.ResourcesLib.userRes("withdrawn")
-var wallet = User.getProperty("PaytmWallet")
+var wallet = User.getProperty("Gcash/Paypal")
 if( wallet == undefined ){
 Bot.sendMessage("_❌ wallet Not set_")
 }else{

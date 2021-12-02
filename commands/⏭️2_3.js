@@ -3,7 +3,7 @@
   help: 
   need_reply: 
   auto_retry_time: 
-  folder: MINING
+  folder: 
   answer: 
   keyboard: 
   aliases: 

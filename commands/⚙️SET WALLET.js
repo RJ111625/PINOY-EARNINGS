@@ -9,6 +9,6 @@
   aliases: 
 CMD*/
 
-let wallet = User.getProperty("PaytmWallet")
-User.setProperty("PaytmWallet" , data.message ,"string")
+let wallet = User.getProperty("Gcash/Paypal")
+User.setProperty("Gcash/Paypal" , data.message ,"string")
 Bot.sendMessage("✅ Ang iyong wallet address ay naka set Sa :* "+data.message+"")

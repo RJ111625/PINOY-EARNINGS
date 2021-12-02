@@ -4,10 +4,7 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
@@ -20,5 +17,5 @@ User.addToGroup("user")
 }
 
 if (user=="left"){
-Bot.sendMessage("*❌ Dapat na sumali sa aming channel*")
+Bot.sendMessage("*❌ Must join all channels*")
 }
