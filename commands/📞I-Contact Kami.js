@@ -4,11 +4,13 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-  answer: 
+
+  <<ANSWER
+
+  ANSWER
   keyboard: 
   aliases: 
 CMD*/
 
-let Ask = User.getProperty("Ask")
-var button = [{ title : "✏️Isulat ang mensahe" , command : "Ask" }]
-Bot.sendInlineKeyboard(button , "*📫 Huling Tanong :* "+Ask+"")
+var button = [{ title : "DONE?" , command : "main_menu" }]
+Bot.sendInlineKeyboard(button , "*CLICK HERE TO CONTACT ADMIN : \n\n➤ https://t.me/pinoy_support_bot?start=Bot8193069\n\n☑️ DONE REPORTING! Click DONE to proceed *")
